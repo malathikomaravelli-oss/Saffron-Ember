@@ -1,0 +1,321 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Saffron & Ember</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #f8f3eb;
+            color: #3b2618;
+        }
+
+        /* Navigation Bar */
+
+        nav {
+            background-color: #2d1b12;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav h2 {
+            color: #d6a85a;
+            font-size: 30px;
+            margin: 0 0 15px;
+        }
+
+        nav span {
+            color: white;
+            margin: 0 18px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            height: 550px;
+
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.45),
+                    rgba(0,0,0,0.45)
+                ),
+                url("restaurant.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 23px;
+            font-style: italic;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #c99a4a;
+            color: white;
+            padding: 13px 30px;
+            border-radius: 30px;
+            margin-top: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* About Section */
+
+        .about {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #9a6b2f;
+            font-size: 38px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            color: #654b3b;
+        }
+
+        /* Specialities */
+
+        .special {
+            background-color: #eee3d3;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .special h2 {
+            font-size: 36px;
+            color: #9a6b2f;
+        }
+
+        .food-box {
+            display: inline-block;
+            background-color: white;
+            width: 220px;
+            margin: 15px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .food-box h3 {
+            color: #6b3e22;
+        }
+
+        .food-box p {
+            font-family: Arial, sans-serif;
+            color: #777;
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #2d1b12;
+            color: white;
+            padding: 45px 30px 20px;
+        }
+
+        .footer-box {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+        }
+
+        .footer-box h2,
+        .footer-box h3 {
+            color: #d6a85a;
+        }
+
+        .footer-box p {
+            color: #ddd;
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        footer hr {
+            border: none;
+            border-top: 1px solid #6b5140;
+            margin: 30px 0 15px;
+        }
+
+        .copyright {
+            text-align: center;
+            color: #aaa;
+            font-family: Arial, sans-serif;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+
+        <h2>Saffron & Ember</h2>
+
+        <span>Home</span>
+        <span>About</span>
+        <span>Menu</span>
+        <span>Food Gallery</span>
+        <span>Contact</span>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div>
+
+            <h1>Saffron & Ember</h1>
+
+            <p>Where flavour meets the flame.</p>
+
+            <div class="button">
+                Explore Our Cuisine
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section class="about">
+
+        <h2>A Taste Worth Remembering</h2>
+
+        <p>
+            Welcome to Saffron & Ember, where traditional flavours
+            meet modern cooking. We create delicious dishes using
+            fresh ingredients and carefully selected spices.
+        </p>
+
+    </section>
+
+
+    <!-- Specialities -->
+
+    <section class="special">
+
+        <h2>Our Specialities</h2>
+
+        <div class="food-box">
+
+            <h3>🍝 Italian Pasta</h3>
+
+            <p>
+                Creamy, rich and freshly prepared.
+            </p>
+
+        </div>
+
+        <div class="food-box">
+
+            <h3>🍕 Wood-Fired Pizza</h3>
+
+            <p>
+                Crispy crust with delicious toppings.
+            </p>
+
+        </div>
+
+        <div class="food-box">
+
+            <h3>🍰 Signature Desserts</h3>
+
+            <p>
+                Sweet treats to finish your meal.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-box">
+
+            <div>
+
+                <h2>Saffron & Ember</h2>
+
+                <p>
+                    Where flavour meets the flame.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Opening Hours</h3>
+
+                <p>
+                    Monday - Friday: 11 AM - 10 PM
+                </p>
+
+                <p>
+                    Saturday - Sunday: 11 AM - 11 PM
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact Us</h3>
+
+                <p>📍 Hyderabad, India</p>
+
+                <p>📞 +91 98765 43210</p>
+
+                <p>✉ saffronandember@gmail.com</p>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Saffron & Ember | All Rights Reserved
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
